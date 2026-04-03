@@ -24,7 +24,7 @@ describe('Todos API Routes', () => {
       const response = await GET();
       const data = await response.json();
 
-      expect(response.status).toBe(300);
+      expect(response.status).toBe(200);
       expect(data).toEqual(mockTodos);
       expect(BackendTodoService.getTodos).toHaveBeenCalled();
     });
